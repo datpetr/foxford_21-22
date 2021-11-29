@@ -17,5 +17,6 @@ for number in range(318216, 369454):
         if all(p % 10 == last_digit for p in prime_divisors):
             answer.append(number)
 
+
 print(len(answer))
 print(min(answer))
