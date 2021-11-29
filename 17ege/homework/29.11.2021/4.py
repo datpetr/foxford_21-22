@@ -2,7 +2,7 @@ answer = []
 
 for number in range(318216, 369454):
     prime_divisors, possible_divisor, current = [], 2, number
-    while possible_divisor ** 2 <= current:
+    while possible_divisor ** 3 <= current:
         if current % possible_divisor == 0:
             prime_divisors.append(possible_divisor)
             current //= possible_divisor
