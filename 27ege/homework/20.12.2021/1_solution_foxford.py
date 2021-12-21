@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 F = open('files/1A.txt', 'r')
-=======
-F = open('filles/1A.txt', 'r')
->>>>>>> origin/foxford_21-22
 n = int(F.readline())
 
 s1 = 0
