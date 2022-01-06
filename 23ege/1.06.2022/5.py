@@ -13,4 +13,3 @@ for i in range(4, n + 1):
         dp[i] = dp[i - 1] + 1
 
 print(dp)
-
