@@ -13,5 +13,5 @@ while r - l > 1:
         l = mid
     else:
         r = mid
-        
+
 print(l, r)
