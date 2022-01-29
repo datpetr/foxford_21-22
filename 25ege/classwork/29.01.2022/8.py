@@ -11,18 +11,14 @@ def sl(n):
 	return d
 
 
-x = 20000001
+x = 10000001
 k = 0
-s = 0
 
 while k < 5:
 	d = sl(x)
-	if len(d) >= 5:
-		for i in range(5):
-			s *= d[i]
-		# s = d[0] * d[1] * d[2] * d[3] * d[4]
-		if s < x and s % 10 == 1:
-			print(x, s, d[4])
+	if len(d) >= 2:
+		s = d[-1] + d[-2]
+		if s < 100000 and s % 1000 == 112:
+			print(x, s)
 			k += 1
-		s = 1
 	x += 1
