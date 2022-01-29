@@ -9,7 +9,7 @@ mx_n = 0
 count_mx = 0
 count = 0
 
-for num in range(100000, 200001):
+for num in range(500000, 900001):
     count = 0
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
