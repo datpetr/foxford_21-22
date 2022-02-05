@@ -14,4 +14,3 @@ start, end = 247264322, 369757523
 for num in range(int(start ** 0.25) + 1, int(end ** 0.25) + 1):
     if simple(num):
         print(num ** 4, num ** 3)
-
