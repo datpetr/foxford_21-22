@@ -14,6 +14,12 @@ for el in a:
             break
 
     if flag:
+        for i in range(9):
+            if el[i] == 'У' and el[i + 1] == 'У':
+                flag = False
+                break
+
+    if flag:
         count += 1
 
 print(count)
