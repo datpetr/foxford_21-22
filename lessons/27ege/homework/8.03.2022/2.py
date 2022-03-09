@@ -16,18 +16,5 @@ for i in range(n):
     if (abs(a - b)) % 5 == 4 and abs(a - b) < md4:
         md4 = abs(a - b)
 
-if s % 5 == 0:
-    print(s)
-else:
-    if (s - md1) % 5 == 0:
-        ans.append(s - md1)
-    if (s - md2) % 5 == 0:
-        ans.append(s - md2)
-    if (s - md3) % 5 == 0:
-        ans.append(s - md3)
-    if (s - md4) % 5 == 0:
-        ans.append(s - md4)
-    print(max(ans))
-
 print(s, md1, md2, md3, md4)
 f.close()
