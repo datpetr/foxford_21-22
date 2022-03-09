@@ -11,6 +11,7 @@ for _ in range(n):
     k.sort(reverse=True)
     pairs.append(k)
 
+print(pairs)
 
 for i in pairs:
     count += i[0]
