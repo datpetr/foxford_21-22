@@ -1,4 +1,4 @@
-f = open('files/4b.txt', 'r')
+f = open('files/4a.txt', 'r')
 
 n = int(f.readline())
 
