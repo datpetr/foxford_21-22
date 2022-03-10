@@ -17,6 +17,6 @@ def func(n):
 
 for i in range(1, 1000):
     n = int(int(func(i), 2))
-    if n > 147:
+    if n > 147 and len(func(i)) > len(bin(i)[2:]):
         print(n)
         break
