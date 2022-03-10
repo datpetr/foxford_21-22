@@ -11,6 +11,12 @@ def func(n):
     for i in st_2:
         count += int(i)
 
-    st_2 += count % 2
+    st_2 += str(count % 2)
+    return st_2
 
-    
+
+for i in range(1, 1000):
+    n = int(int(func(i), 2))
+    if n > 147:
+        print(n)
+        break
