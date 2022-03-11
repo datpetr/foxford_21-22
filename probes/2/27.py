@@ -1,4 +1,4 @@
-f = open('files/27b.txt', 'r')
+f = open('files/27a.txt', 'r')
 
 n = int(f.readline())
 sum_ = 0
@@ -13,7 +13,7 @@ for _ in range(n):
     if ((pairs[0] - pairs[2]) % 5 != 0) and ((pairs[0] - pairs[2]) < mn):
         mn = (pairs[0] - pairs[2])
 
-if sum_ % 4 != 0:
+if sum_ % 5 != 0:
     print(sum_)
 else:
     print(sum_ - mn)
