@@ -17,4 +17,4 @@ for i, val in enumerate(a):
             if val == 1:
                 count += 1
             else:
-                pass
+
