@@ -37,4 +37,4 @@ else:
             if f[i] + f[i + 1] > mx:
                 mx = f[i] + f[i + 1]
 
-print(count, mx)
+print(count, mx, flag)
