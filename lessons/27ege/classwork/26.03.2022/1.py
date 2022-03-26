@@ -23,11 +23,9 @@ for i in range(n):
     if simple(x):
         ks += 1
     r = ks % 9
-    if r == 0:
-        ms = s
-    else:
-        if a[r] != 0 and (s - a[r]) > ms:
-            ms = s - a[r]
+
+    if a[r] != 0 and (s - a[r]) > ms:
+        ms = s - a[r]
 
     if a[r] == 0:
         a[r] = s
