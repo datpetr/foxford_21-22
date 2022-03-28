@@ -1,5 +1,5 @@
 def simple(n):
-    if 0 < n < 2:
+    if len(str(n)) != 3:
         return False
     else:
         for i in range(2, int(n ** 0.5) + 1):
@@ -8,7 +8,7 @@ def simple(n):
         return True
 
 
-f = open('files/1a.txt', 'r')
+f = open('files/1b.txt', 'r')
 n = int(f.readline())
 
 s = 0
