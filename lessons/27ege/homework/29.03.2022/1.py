@@ -1,5 +1,5 @@
 f = open('files/1b.txt', 'r')
-n = int(F.readline())
+n = int(f.readline())
 s = 0
 md = 100001
 
