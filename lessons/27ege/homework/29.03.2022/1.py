@@ -4,7 +4,6 @@ s = 0
 md = 100001
 
 for _ in range(n):
-
     d = list(map(int, (f.readline().split())))
     d.sort(reverse=True)
     s += d[0]
