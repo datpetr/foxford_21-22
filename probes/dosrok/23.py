@@ -6,7 +6,7 @@ def f(x, t):
     if x == t:
         return 1
     elif x > t:
-        return 1
+        return 0
     return f(x + 2, t) + f(x * 2, t)
 
 
