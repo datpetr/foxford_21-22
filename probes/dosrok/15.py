@@ -3,10 +3,9 @@ def dell(x, a):
 
 
 a = 1
-
 while True:
-    for x in range(1000):
-        if not ((dell(x, 3) <= (not dell(x, 5))) or (x + a >= 70)):
+    for x in range(1, 10000):
+        if not(((dell(x, 3)) <= (not dell(x, 5))) or ((x + a) >= 70)):
             break
     else:
         print(a)
