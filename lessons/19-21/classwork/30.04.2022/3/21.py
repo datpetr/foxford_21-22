@@ -1,7 +1,7 @@
 def f(x, pos, p, v):  # prev +1 -- 1; +2 -- 2; x * 2 -- 3
     if x >= 21 and (pos == 3 or pos == 5):  # или x >= 21 and (pos == 1 or pos == 3): (1)
         return True
-    elif x < 21 and pos == 5:  # или x x < 21 and pos == 3: (2); (1) и (2) должны выполняться вместе потом откидываем
+    elif x < 21 and pos == 5:  # или x x < 21 and pos == 3: (2); (1) и (2) должны выполняться вместе, потом откидываем
         # совпадения в двух вариациях
         return False
     elif x >= 21 and (pos == 2 or pos == 4):
