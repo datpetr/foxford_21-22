@@ -1,7 +1,7 @@
 def f(x, pos, prev):  # prev +1 -- 1; +2 -- 2; x * 2 -- 3
     if x >= 43 and (pos == 2 or pos == 4):  # или x >= 43 and pos == 2 (1)
         return True
-    elif x < 43 and pos == 4:  # или x < 43 and pos == 2 (2); (1) и (2) должны рабоать вместе
+    elif x < 43 and pos == 4:  # или x < 43 and pos == 2 (2); (1) и (2) должны работать вместе
         return False
     elif x >= 43 and (pos == 1 or pos == 3):
         return False
