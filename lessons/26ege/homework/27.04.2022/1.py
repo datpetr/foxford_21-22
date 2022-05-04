@@ -12,8 +12,8 @@ f.close()
 
 data.sort(key=lambda x: (x[2], x[0]))
 
-xSum = 0
-countZ = 0
+xSum = countZ = 0
+
 for d in data:
     if xSum + d[0] > s:
         break
