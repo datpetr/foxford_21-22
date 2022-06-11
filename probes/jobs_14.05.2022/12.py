@@ -1,4 +1,4 @@
-a = []
+a = set()
 
 for i in range(204):
     s = '1' * i + '2' + '1' * (203 - i)
@@ -8,6 +8,6 @@ for i in range(204):
         else:
             s = s.replace('222', '11', 1)
 
-    a.append(len(s))
+    a.add(s)
 
-print(max(a))
+print(max(a, key=len))

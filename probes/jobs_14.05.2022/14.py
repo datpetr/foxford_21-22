@@ -1,14 +1,11 @@
 def x_to_n(x, n):
-    s = ''
+    s = 0
     while x:
-        s += str(x % n)
+        s += x % n
         x //= n
-    return s[::-1]
+    return s
 
 
-count = 0
 n = 7 * (5 ** 1984) - 6 * (25 ** 777) + 5 * (125 ** 333) - 4
-for i in x_to_n(n, 7):
-    count += int(i)
 
-print(count)
+print(x_to_n(n, 5))
