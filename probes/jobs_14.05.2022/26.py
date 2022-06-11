@@ -21,4 +21,5 @@ for _ in range(n):
     else:
         req[net] = [1, {node}]
 
-print(min((-v[0], -len(v[1]), i)) for i, v in req.items())
+s = min((-v[0], -len(v[1]), i) for i, v in req.items())
+print('.'.join(map(str, s[2])), s[0])
