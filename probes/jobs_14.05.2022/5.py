@@ -17,5 +17,4 @@ for i in range(256):
     elif s in a:
         count[s] += 1
 
-print(sum(count))
-print(count)
+print(sum(count) - 1)
