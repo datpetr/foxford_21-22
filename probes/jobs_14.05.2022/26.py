@@ -22,4 +22,4 @@ for _ in range(n):
         req[net] = [1, {node}]
 
 s = min((-v[0], -len(v[1]), i) for i, v in req.items())
-print('.'.join(map(str, s[2])), s[0])
+print('.'.join(map(str, s[2])), -s[1])
