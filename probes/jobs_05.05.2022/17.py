@@ -10,6 +10,6 @@ for i in range(1, len(f) - 1):
     sum_index_following = sum([int(x) for x in str(abs(f[i + 1]))])
     if sum_index_prev == sum_index_following:
         count += 1
-        a.extend([sum_index_prev, sum_index_following])
+        a.append(sum(map(int, str(f[i]))))
 
 print(count, Counter(a).most_common()[0][0])
