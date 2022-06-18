@@ -1,3 +1,4 @@
+
 f = open('files/24.txt', 'r').readline().strip()
 
 combinations_of_letters = ['AB', 'CB', 'BC', 'BA']
@@ -13,3 +14,17 @@ for i in range(len(f) - 1):
     mx = max(mx, count)
 
 print(mx)
+=======
+f = open('files/24.txt', 'r').readline()
+
+f = f.replace('AB', '*')
+f = f.replace('CB', '*')
+f = f.replace('BC', '*')
+f = f.replace('BA', '*')
+
+for i in 'ABCDEF':
+    f = f.replace(f'{i}', ' ')
+print(f)
+lengts = [len(i) for i in f.split()]
+print(max(lengts))
+>>>>>>> origin/foxford_21-22
