@@ -1,5 +1,5 @@
 a = set()
-for i in range(1, 2000):
+for i in range(1, 1000):
     s = '1' * i
     while '1111' in s or '222' in s or '33' in s:
         if '1111' in s:
