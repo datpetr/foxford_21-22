@@ -1,20 +1,19 @@
-f = open('files/27-A.txt', 'r')
+f = open('files/27-B.txt', 'r')
 
 n, k = map(int, f.readline().split())
-a = list(map(int, f.readlines()))
+a = list(map(int, f.readlines()))[:n] * 2
 
-count, mn = 0, 10 ** 10
-cur_sum = beg_sum = 0
+st = s = 0
+mc = 10 ** 10
 for i in range(n):
-    cur_sum += a[i]
-    count += 1
-    if cur_sum - beg_sum == k and count < mn:
-        mn = count
-        beg_sum += cur_sum
-        cur_sum = count = 0
-    else:
-        if cur_sum - beg_sum > k:
-            beg_sum += cur_sum
-            cur_sum = count = 0
+    s += a[i]
+    while s > k:
+        s -= a[st]
+        st += 1
+    if s == k:
+        if mc > i - st + 1:
+            mc = i - st + 1
+        s -= a[st]
+        st += 1
 
-print(mn)
+print(mc)
